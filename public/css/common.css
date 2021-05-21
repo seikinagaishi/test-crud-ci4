@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #efefef;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    background-color: white;
+    width: 400px;
+    height: 340px;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+form h1 {
+    font-size: 20pt;
+    font-weight: lighter;
+    text-transform: uppercase;
+
+    margin-bottom: 30px;
+}
+
+form input, form button {
+    width: 300px;
+    border-radius: 5px; 
+    
+    margin: 5px 0;
+
+    font-weight: lighter;
+}
+
+form input {
+    background-color: #efefef;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 14pt;    
+     
+    border: 1px solid black;
+}
+
+form button {
+    background-color: orange;
+    cursor: pointer;
+    height: 50px;
+    border: 1px solid black;
+
+    font-size: 16pt;
+    
+    transition: 0.2s;
+}
+
+form button:hover {
+    background-color: black;
+    color: white;
+}
+
+form a {
+    text-decoration: none;
+    color: #18a0fb;
+    transition: 0.2s;
+}
+
+form a:hover {
+    color: #0567a8;
+}
+
+footer {
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
+    background-color: black;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 10pt;
+}
+
+.danger {
+    background-color: rgb(224, 66, 66);
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    font-size: 14pt;
+    margin-top: 5px;
+}
+
+/* Lista */
+
+#page-list {
+    display: block;
+}
+
+#list {
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 85vh;
+    overflow: auto;
+}
+
+.user {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+    margin: 10px;
+}
+
+.user:hover {
+    background-color: #929292;
+}
+
+.user:hover .pic {
+    background-color: white;
+}
+
+.user:hover h1 {
+    color: white;
+}
+
+.pic {
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+    background-color: #4aa7be;
+    transition: 0.2s;
+}
+
+.user h1 {
+    margin-top: 10px;
+    transition: 0.2s;
+}
+
+.anchor-button {
+    width: 80%;
+    margin: 0 10%;
+    height: 5vh;
+    background-color: orange;
+    border: 1px solid black;
+    color: black;
+    font-weight: bold;
+
+    text-decoration: none;
+    position: fixed;
+    border-radius: 5px;
+    bottom: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.2s;
+}
+
+.anchor-button:hover {
+    background-color: black;
+    color: white;
+}
